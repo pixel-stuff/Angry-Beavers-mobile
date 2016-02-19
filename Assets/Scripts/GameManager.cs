@@ -78,7 +78,13 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		if (state == GameState.Intro) {
+			if (Input.touchCount == 1) {    
+				// touch on screen
+				if (Input.GetTouch (0).phase == TouchPhase.Began) {
+					DoIntro();
+				}
+		}
 		// While playing
 
 		if (state == GameState.InGame) {

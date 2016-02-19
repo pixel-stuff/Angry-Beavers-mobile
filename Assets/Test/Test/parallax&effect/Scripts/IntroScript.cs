@@ -17,14 +17,14 @@ public class IntroScriptt : MonoBehaviour {
 			}
 
 		}
-
-		if (Input.touchCount == 1) {
-		if (Input.GetTouch (0).phase == TouchPhase.Began) {
+		if (Input.touchCount == 1) {    
+			// touch on screen
+			if (Input.GetTouch (0).phase == TouchPhase.Began) {
 				if(onKeyDown != null){
 					Debug.Log ("INTRO ");
 					onKeyDown();
 				}
 			}
-	}
+		}
 }
 }
