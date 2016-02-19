@@ -9,7 +9,7 @@ public class IntroScriptt : MonoBehaviour {
 	//public bool isPush = false;
 	// Update is called once per frame
 	void Update () {
-		if ( Input.GetKey(KeyCode.Return) || f (Input.touchCount == 1) /* && !isPush*/) {
+		if ( Input.GetKey(KeyCode.Return) || (Input.touchCount == 1) /* && !isPush*/) {
 			//isPush = true;
 			if(onKeyDown != null){
 				Debug.Log ("INTRO ");
