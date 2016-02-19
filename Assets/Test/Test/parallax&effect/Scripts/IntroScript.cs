@@ -15,6 +15,15 @@ public class IntroScriptt : MonoBehaviour {
 				Debug.Log ("INTRO ");
 				onKeyDown();
 			}
+
 		}
+
+		if (Input.touchCount == 1) {
+		if (Input.GetTouch (0).phase == TouchPhase.Began) {
+				if(onKeyDown != null){
+					Debug.Log ("INTRO ");
+					onKeyDown();
+				}
+			}
 	}
 }
