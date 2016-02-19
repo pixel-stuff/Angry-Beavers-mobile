@@ -53,9 +53,9 @@ public class GameManager : MonoBehaviour {
 
 	void Start(){
 		//parallax, beavermanager, brotherManager, TreeManager
-		brothersManager.gameObject.SetActive (false);
+		brothersManager.gameObject.SetActive (true);
 		beaversManager.gameObject.SetActive (false);
-		parallaxManager.gameObject.SetActive (false);
+		parallaxManager.gameObject.SetActive (true);
 		treeMan.gameObject.SetActive (false);
 
 		restartGameScript.onKeyDown += MenuRestartBtnClicked;
