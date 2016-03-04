@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 
 	public BrothersManager brothersManager;
 	public BeaversManager beaversManager;
-	public ParallaxManager parallaxManager;
+	public parralaxManager parallaxManager;
 	public treeManager treeMan;
 
 
@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour {
 	void Awake() {
 		state = GameState.Intro;
 		beaversManager.onBeaverKilledListener += OnBeaverKilled;
+	//	StartIngame ();
 
 	}
 	
@@ -87,7 +88,9 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		// While playing
-
+		if (state != GameState.InGame) {
+			StartIngame ();
+		}
 		if (state == GameState.InGame) {
 
 			if (Input.touchCount == 1) {    

@@ -60,7 +60,7 @@ public class tree : MonoBehaviour {
 				isShake = false;
 				state=TreeState.ONFLOOR;
 				trunk.GetComponent<SpriteRenderer>().enabled=false;
-				GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<ParallaxManager> ().isPaused = false;
+				GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<parralaxManager> ().isPaused(false);
 			}else{
 			state = TreeState.FALLEN;
 			}

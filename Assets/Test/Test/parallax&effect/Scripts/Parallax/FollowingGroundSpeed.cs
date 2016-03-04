@@ -4,7 +4,7 @@ using System.Collections;
 public class FollowingGroundSpeedt : MonoBehaviour {
 
 	private ParallaxManager m_parallaxManager;
-	private Vector3 m_directionMouvement = new Vector3(1f,0f,0f);
+	private Vector3 m_directionMouvement = new Vector3(-1f,0f,0f);
 
 	// Use this for initialization
 	void Start () {

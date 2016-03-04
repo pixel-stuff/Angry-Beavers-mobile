@@ -29,8 +29,9 @@ public class parralaxManager : MonoBehaviour {
 	private Camera cameraToFollow = null;
 	[SerializeField]
 	[Tooltip("independante speed. This speed willaffect all the parralax plan ")]
-	private float speed;
+	private float constantSpeed;
 
+	private float speed;
 	private GameObject rightBorder;
 	private GameObject leftBorder;
 	private List<GameObject> parralaxPlans;
@@ -41,6 +42,7 @@ public class parralaxManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		speed = constantSpeed;
 		rightBorder = Instantiate (new GameObject ());
 		rightBorder.transform.parent = this.transform;
 		leftBorder = Instantiate (new GameObject ());
@@ -116,6 +118,18 @@ public class parralaxManager : MonoBehaviour {
             {
                 plan.GetComponent<parallaxPlan>().refreshOnZoom();
             }
+		}
+	}
+
+	public float getGroundSpeedf() {
+		return speed;
+	}
+
+	public void isPaused(bool pause) {
+		if (pause) {
+			speed = 0;
+		} else {
+			speed = constantSpeed;
 		}
 	}
 }

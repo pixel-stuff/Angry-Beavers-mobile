@@ -129,12 +129,12 @@ public class BrothersManager : MonoBehaviour {
 
 	void DoStopParallax(){
 		Debug.Log("Pause enable");
-		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<ParallaxManager> ().isPaused = true;
+		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<parralaxManager> ().isPaused (true);
 	}
 
 	void DoRestartParallax(){
 		Debug.Log("Pause disable");
-		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<ParallaxManager> ().isPaused = false;
+		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<parralaxManager> ().isPaused(false);
 	}
 
 	public void ChopLeft(){
@@ -207,7 +207,7 @@ public class BrothersManager : MonoBehaviour {
 		leg1.restart ();
 		brother2.restart ();
 		leg2.restart ();
-		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<ParallaxManager> ().isPaused = false;
+		GameObject.FindGameObjectWithTag ("ParallaxManager").GetComponent<parralaxManager> ().isPaused(false);
 		state = BrotherState.Running;
 	}
 	
