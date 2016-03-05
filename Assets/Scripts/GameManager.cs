@@ -83,14 +83,11 @@ public class GameManager : MonoBehaviour {
 			if (Input.touchCount == 1) {    
 				// touch on screen
 				if (Input.GetTouch (0).phase == TouchPhase.Began) {
-					DoIntro ();
+					StartIngame ();
 				}
 			}
 		}
 		// While playing
-		if (state != GameState.InGame) {
-			StartIngame ();
-		}
 		if (state == GameState.InGame) {
 
 			if (Input.touchCount == 1) {    
