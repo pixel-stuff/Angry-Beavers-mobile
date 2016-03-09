@@ -17,11 +17,12 @@ public class CameraManager : MonoBehaviour {
 	public float m_shakingDuration = 0.0f;
 	public bool m_isGameOver = false;
 
-	public float zoom;
-	public Rect rectCamera;
 	private bool m_isGameOverScreenShowing = false;
 	private GUIText m_guiText = null;
 
+	private Vector3 m_cameraPosition;
+	private float m_cameraZoom;
+	private Rect m_cameraRect;
 	// Use this for initialization
 	void Start () {
 		m_guiText = gameOverScreenSprite.AddComponent<GUIText> ();
@@ -29,25 +30,27 @@ public class CameraManager : MonoBehaviour {
 		m_guiText.font = Font.CreateDynamicFontFromOSFont("Arial", 11);
 		m_guiText.text = "";
 		m_guiText.enabled = false;
-		initSettings();
+		saveSetting();
 	}
 
-	private void initSettings() {
-		Camera.main.transform.position = new Vector3 (1.0f, 0.0f, -2.0f);
-		Camera.main.orthographicSize = zoom;
-		Camera.main.rect = rectCamera;//new Rect(0.0f, 0.25f, 1.0f, 0.55f);
+	private void saveSetting() {
+		m_cameraPosition = Camera.main.transform.position;// = new Vector3 (1.0f, 0.0f, -2.0f);
+		m_cameraZoom = Camera.main.orthographicSize;// = zoom;
+		m_cameraRect = Camera.main.rect;// = rectCamera;//new Rect(0.0f, 0.25f, 1.0f, 0.55f);
 		m_guiText.transform.position = new Vector3 (0.0f, 0.0f, -1.0f);
 		gameOverScreenSprite.transform.position = new Vector3 (0.0f, 0.0f, -1.0f);
 	}
 
 	private void restartSettings() {
+		Debug.Log (m_cameraPosition.x);
 		Camera.main.transform.position = new Vector3 (
-			Mathf.SmoothStep (Camera.main.transform.position.x, 1.0f, 0.01f),
-			Mathf.SmoothStep (Camera.main.transform.position.y, 0.0f, 0.01f),
-			Mathf.SmoothStep (Camera.main.transform.position.z, -2.0f, 0.01f)
+			Mathf.SmoothStep (Camera.main.transform.position.x, m_cameraPosition.x, 0.6f),
+			Mathf.SmoothStep (Camera.main.transform.position.y, m_cameraPosition.y, 0.6f),
+			Mathf.SmoothStep (Camera.main.transform.position.z, m_cameraPosition.z, 0.6f)
 			);
-		Camera.main.orthographicSize = zoom;
-		Camera.main.rect =rectCamera;// new Rect(0.0f, 0.25f, 1.0f, 0.55f);
+		//Camera.main.transform.position = m_cameraPosition;
+		Camera.main.orthographicSize = Mathf.SmoothStep (Camera.main.orthographicSize, m_cameraZoom, 0.01f);
+		Camera.main.rect =m_cameraRect;// new Rect(0.0f, 0.25f, 1.0f, 0.55f);
 		m_guiText.transform.position = new Vector3 (0.0f, 0.0f, -1.0f);
 		gameOverScreenSprite.transform.position = new Vector3 (0.0f, 0.0f, -1.0f);
 	}

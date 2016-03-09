@@ -299,6 +299,30 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: shakeAmplitudeX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: shakeAmplitudeY
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_shakingDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: shakeSpeedX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441586, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: shakeSpeedY
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8164074, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
     - {fileID: 12404812, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
