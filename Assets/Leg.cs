@@ -53,11 +53,11 @@ public class Leg : MonoBehaviour {
 
 	public void chop(bool isLeft){
 		animator.SetTrigger("Chop");
-		if (isLeft) {
+		/*if (isLeft) {
 			transform.localPosition += new Vector3(-0.1f, 0.0f, 0.0f);
 		} else {
 			transform.localPosition += new Vector3(0.1f, 0.0f, 0.0f);
-		}
+		}*/
 	}
 
 	public void restart() {

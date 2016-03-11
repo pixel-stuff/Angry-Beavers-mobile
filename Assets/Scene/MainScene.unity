@@ -112,9 +112,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.421, y: -0.40100002, z: 0.00999999}
   m_LocalScale: {x: 1, y: 1, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 164637704}
   m_Father: {fileID: 327877834}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!95 &31522847
 Animator:
   serializedVersion: 3
@@ -214,11 +215,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 164637703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52, y: -0.401, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.941, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 391839109}
-  m_RootOrder: 5
+  m_Father: {fileID: 31522846}
+  m_RootOrder: 0
 --- !u!1001 &185934417
 Prefab:
   m_ObjectHideFlags: 0
@@ -298,10 +299,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 760431631}
   - {fileID: 1398405376}
   - {fileID: 31522846}
+  - {fileID: 865169498}
   m_Father: {fileID: 391839109}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &368636492
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 391839109}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &391839108
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,13 +360,9 @@ Transform:
   m_LocalPosition: {x: -2.75, y: -1.45, z: -0.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 865169498}
   - {fileID: 327877834}
   - {fileID: 1963365392}
   - {fileID: 368636493}
-  - {fileID: 760431631}
-  - {fileID: 164637704}
-  - {fileID: 1588505613}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!61 &391839110
@@ -673,11 +672,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760431630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 0.165, z: 0}
+  m_LocalPosition: {x: 1.52, y: 0.16499996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 391839109}
-  m_RootOrder: 4
+  m_Father: {fileID: 327877834}
+  m_RootOrder: 0
 --- !u!114 &790898133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,11 +751,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 865169496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.64, y: 0.011, z: 0}
+  m_LocalPosition: {x: -1.6399999, y: 0.011000037, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
-  m_Father: {fileID: 391839109}
-  m_RootOrder: 0
+  m_Father: {fileID: 327877834}
+  m_RootOrder: 3
 --- !u!1 &916799987
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +781,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 916799987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36000013, y: 0.16499996, z: 0}
+  m_LocalPosition: {x: -0.36000013, y: 0.158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1963365392}
@@ -876,7 +875,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.408, y: -0.411, z: 0.00999999}
   m_LocalScale: {x: 1, y: 1, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1588505613}
   m_Father: {fileID: 1963365392}
   m_RootOrder: 1
 --- !u!95 &1050538549
@@ -1064,7 +1064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 327877834}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!95 &1398405377
 Animator:
   serializedVersion: 3
@@ -1149,11 +1149,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1588505612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.40100002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.408, y: 0.00999999, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 391839109}
-  m_RootOrder: 6
+  m_Father: {fileID: 1050538548}
+  m_RootOrder: 0
 --- !u!1 &1963365391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,7 +1182,7 @@ Transform:
   - {fileID: 916799988}
   - {fileID: 1050538548}
   m_Father: {fileID: 391839109}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1984384627 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11475670, guid: 32a5c65232d02314d95d6a72ebf9db73,
