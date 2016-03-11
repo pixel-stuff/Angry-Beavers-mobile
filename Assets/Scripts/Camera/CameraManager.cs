@@ -58,11 +58,11 @@ public class CameraManager : MonoBehaviour {
 	private void shakeX (bool brute) {
 		if (brute) {
 			float x = Random.Range (-shakeAmplitudeX, shakeAmplitudeX);
-			Camera.main.transform.position = new Vector3 (x, 0.0f, 0.0f);
+			Camera.main.transform.position = new Vector3 (x, Camera.main.transform.position.y, Camera.main.transform.position.z);
 		} else {
-			if(Camera.main.transform.position.x<-shakeAmplitudeX) {
+			if(Camera.main.transform.position.x<m_cameraPosition.x -shakeAmplitudeX) {
 				shakeSpeedX = Mathf.Abs(shakeSpeedX);
-			}else if(Camera.main.transform.position.x>shakeAmplitudeX) {
+			}else if(Camera.main.transform.position.x>m_cameraPosition.x + shakeAmplitudeX) {
 				shakeSpeedX = -Mathf.Abs(shakeSpeedX);
 			}
 			Camera.main.transform.Translate(new Vector3 (shakeSpeedX, 0.0f, 0.0f));
@@ -72,11 +72,11 @@ public class CameraManager : MonoBehaviour {
 	private void shakeY (bool brute) {
 		if (brute) {
 			float y = Random.Range (-shakeAmplitudeY, shakeAmplitudeY);
-			Camera.main.transform.position = new Vector3 (0.0f, y, 0.0f);
+			Camera.main.transform.position = new Vector3 (Camera.main.transform.position.x, y, Camera.main.transform.position.y);
 		} else {
-			if(Camera.main.transform.position.y<-shakeAmplitudeY) {
+			if(Camera.main.transform.position.y<m_cameraPosition.y -shakeAmplitudeY) {
 				shakeSpeedY = Mathf.Abs(shakeSpeedY);
-			}else if(Camera.main.transform.position.y>shakeAmplitudeY) {
+			}else if(Camera.main.transform.position.y>m_cameraPosition.y + shakeAmplitudeY) {
 				shakeSpeedY = -Mathf.Abs(shakeSpeedY);
 			}
 			Camera.main.transform.Translate(new Vector3 (0.0f, shakeSpeedY, 0.0f));

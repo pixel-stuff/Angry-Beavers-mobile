@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.20000005, y: 0, z: 0}
+  m_LocalPosition: {x: 2.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455136}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.27999997, y: -1.48000002, z: 0}
+  m_LocalPosition: {x: -3.28, y: -1.48, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429908}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .419999987, y: .0500000007, z: 0}
+  m_LocalPosition: {x: 0.42, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455136}
@@ -96,12 +96,13 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183298}
   m_Enabled: 0
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0603778362, y: -.100000024}
+  m_Offset: {x: -0.060377836, y: -0.100000024}
   serializedVersion: 2
-  m_Size: {x: 4.80000019, y: .289999992}
+  m_Size: {x: 4.8, y: 0.29}
 --- !u!61 &6163564
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -109,6 +110,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173006}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
@@ -122,12 +124,13 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173282}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: .400000006, y: .699999988}
+  m_Size: {x: 0.4, y: 0.7}
 --- !u!114 &11439228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,9 +164,9 @@ MonoBehaviour:
   CurrentState: 0
   currentPV: 0
   smashAngle: 60
-  secondePrepareSmash: .699999988
+  secondePrepareSmash: 0.7
   onTheGroundAngle: 0
-  secondeSmash: .200000003
+  secondeSmash: 0.2
   iddleAngle: 0
   throwDuration: 2
   currentTimeAnim: 0
@@ -171,7 +174,7 @@ MonoBehaviour:
   prepareNextTime: 0
   throwItNextTime: 0
   xPickUp: 0
-  yPickUp: -1.54999995
+  yPickUp: -1.55
   currentEtat: 0
   widthBaseSmashBoxCollider: 0
   xBaseSharpBoxCollider: 0
@@ -193,14 +196,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1382d4ee5f0f24a86b3fc632ae9e5ed8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

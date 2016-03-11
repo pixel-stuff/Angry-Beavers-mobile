@@ -100,6 +100,7 @@ public class BrothersManager : MonoBehaviour {
 		leg1.Run ();
 		brother2.Run ();
 		leg2.Run ();
+		armBrother1.SetActive (false);
 	}
 
 	private void DoHaveTree() {
@@ -108,6 +109,7 @@ public class BrothersManager : MonoBehaviour {
 		leg1.Run ();
 		brother2.HaveTree ();
 		leg2.Run ();
+		armBrother1.SetActive (true);
 	}
 
 	private void DoDropTunk() {
@@ -116,12 +118,14 @@ public class BrothersManager : MonoBehaviour {
 		brother2.DropTrunk ();
 
 		state = BrotherState.ChoppingWood;
+		armBrother1.SetActive (false);
 	}
 
 	private void DoDeath() {
 		m_audioManager.stopAudioBrothersRunning ();
 		brother1.Died ();
 		brother2.Died ();
+		armBrother1.SetActive (false);
 		if (brothersDiedAction != null) {
 			brothersDiedAction ();
 		}
