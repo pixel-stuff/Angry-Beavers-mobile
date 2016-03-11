@@ -165,6 +165,13 @@ public class GameManager : MonoBehaviour {
 		
 		// Handle Keyboard inputs
 		if (state == GameState.Over) {
+			if (Input.touchCount == 1) {    
+				// touch on screen
+				if (Input.GetTouch (0).phase == TouchPhase.Ended) {
+					MenuRestartBtnClicked();
+				}
+			}
+
 			if(Input.GetKeyDown (KeyCode.R)) {
 				MenuRestartBtnClicked();
 			}
@@ -242,9 +249,9 @@ public class GameManager : MonoBehaviour {
 	public void MenuRestartBtnClicked() {
 		Debug.Log ("START INTRO");
 		state = GameState.Intro;
-			brothersManager.gameObject.SetActive (false);
+		brothersManager.gameObject.SetActive (true);
 		beaversManager.gameObject.SetActive (false);
-		parallaxManager.gameObject.SetActive (false);
+		parallaxManager.gameObject.SetActive (true);
 		treeMan.gameObject.SetActive (false);
 		restartGameScript.gameObject.SetActive (false);
 		introScript.gameObject.SetActive (true);
