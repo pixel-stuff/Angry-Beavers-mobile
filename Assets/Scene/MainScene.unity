@@ -876,15 +876,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Color.r
-      value: 0.1539555
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Color.b
-      value: 0.9705882
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Color.a
