@@ -18,6 +18,8 @@ abstract public class parallaxPlan : MonoBehaviour {
 	public float lowSpaceBetweenAsset = 0;
     public float relativeSpeed;
 
+	public Color colorTeint;
+
 	public parralaxAssetGenerator generator;
 
 	abstract public void setSpeedOfPlan(float newSpeed);
