@@ -14,6 +14,7 @@ public class ParralaxPlanConfiguration : System.Object
 	public float lowSpaceBetweenAsset;
 	public float hightSpaceBetweenAsset;
     public float relativeSpeed;
+	public Color colorTeinte = Color.clear;
 }
 
 public class parralaxManager : MonoBehaviour {
@@ -60,6 +61,7 @@ public class parralaxManager : MonoBehaviour {
 			tempScript.lowSpaceBetweenAsset = config.lowSpaceBetweenAsset;
 			tempScript.hightSpaceBetweenAsset = config.hightSpaceBetweenAsset;
             tempScript.relativeSpeed = config.relativeSpeed;
+			tempScript.colorTeint = config.colorTeinte;
 
 			parralaxPlans.Add(tempParralaxPlan);
 		}
@@ -85,6 +87,7 @@ public class parralaxManager : MonoBehaviour {
 				temp.transform.localPosition = new Vector3(temp.transform.localPosition.x,temp.transform.localPosition.y,temp.transform.localPosition.z+ zsupp--);
 			}
 		}
+		Update ();
 	}
 	
 	// Update is called once per frame

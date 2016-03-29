@@ -824,11 +824,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 461036, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.88
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 461036, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.34
+      value: 11.55
       objectReference: {fileID: 0}
     - target: {fileID: 434294, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -872,6 +872,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11499046, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21206776, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -1690,6 +1706,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.size
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 460610, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1726,6 +1746,332 @@ Prefab:
       propertyPath: cameraToFollow
       value: 
       objectReference: {fileID: 520358330}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].relativeSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].distance
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].distance
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: constantSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[0].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[0].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[0].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].colorTeinte.r
+      value: 0.29411763
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].colorTeinte.g
+      value: 0.29411763
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].colorTeinte.b
+      value: 0.29411763
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[2].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[2].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[2].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[3].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[3].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[3].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[2].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].colorTeinte.r
+      value: 0.5808823
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].colorTeinte.g
+      value: 0.5808823
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].colorTeinte.b
+      value: 0.5808823
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].colorTeinte.r
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].colorTeinte.g
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].colorTeinte.b
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[3].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[4].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[4].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[4].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[4].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[5].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[5].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[5].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[5].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[6].colorTeinte.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[6].colorTeinte.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[6].colorTeinte.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[6].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[0].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].distance
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].colorTeinte.r
+      value: 0.75735295
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].colorTeinte.g
+      value: 0.75735295
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].colorTeinte.b
+      value: 0.75735295
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].distance
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].colorTeinte.r
+      value: 0.8014706
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].colorTeinte.g
+      value: 0.8014706
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].colorTeinte.b
+      value: 0.8014706
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].prefabParralaxPlan
+      value: 
+      objectReference: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].distance
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].generatorScript
+      value: 
+      objectReference: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa,
+        type: 2}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].hightSpaceBetweenAsset
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].colorTeinte.r
+      value: 0.8235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].colorTeinte.g
+      value: 0.8235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].colorTeinte.b
+      value: 0.8235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].colorTeinte.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[1].distance
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[7].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[8].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[9].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[10].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
+      propertyPath: configurationParralax.Array.data[11].lowSpaceBetweenAsset
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
   m_IsPrefabParent: 0
