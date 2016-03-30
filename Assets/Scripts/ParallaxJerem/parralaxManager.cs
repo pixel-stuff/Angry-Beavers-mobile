@@ -15,6 +15,7 @@ public class ParralaxPlanConfiguration : System.Object
 	public float hightSpaceBetweenAsset;
     public float relativeSpeed;
 	public Color colorTeinte = Color.clear;
+	public string nameParalaxPlan;
 }
 
 public class parralaxManager : MonoBehaviour {
@@ -40,6 +41,8 @@ public class parralaxManager : MonoBehaviour {
 
 
     private float CameraWidthSize = 0;
+
+	public bool debugMode = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -52,6 +55,7 @@ public class parralaxManager : MonoBehaviour {
 		foreach (ParralaxPlanConfiguration config in configurationParralax) {
 			GameObject tempParralaxPlan = Instantiate(config.prefabParralaxPlan);
 			tempParralaxPlan.transform.parent = this.transform;
+			tempParralaxPlan.name = config.nameParalaxPlan;
 
 			parallaxPlan tempScript = tempParralaxPlan.GetComponent<parallaxPlan>();
 			tempScript.popLimitation = rightBorder;
@@ -122,6 +126,10 @@ public class parralaxManager : MonoBehaviour {
                 plan.GetComponent<parallaxPlan>().refreshOnZoom();
             }
 		}
+
+		if (debugMode) {
+			setPlanConstante ();
+		}
 	}
 
 	public float getGroundSpeedf() {
@@ -133,6 +141,23 @@ public class parralaxManager : MonoBehaviour {
 			speed = 0;
 		} else {
 			speed = constantSpeed;
+		}
+	}
+
+	private void setPlanConstante() {
+		speed = constantSpeed;
+
+		foreach (ParralaxPlanConfiguration config in configurationParralax) {
+			GameObject tempParralaxPlan = parralaxPlans.Find (plan => plan.name == config.nameParalaxPlan);
+
+			parallaxPlan parralaxScript = tempParralaxPlan.GetComponent<parallaxPlan>();
+			parralaxScript.generator = config.generatorScript;
+			parralaxScript.distance = config.distance;
+			parralaxScript.lowSpaceBetweenAsset = config.lowSpaceBetweenAsset;
+			parralaxScript.hightSpaceBetweenAsset = config.hightSpaceBetweenAsset;
+			parralaxScript.relativeSpeed = config.relativeSpeed;
+			parralaxScript.colorTeint = config.colorTeinte;
+
 		}
 	}
 }

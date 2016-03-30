@@ -16,6 +16,9 @@ public class assetRandomGenerator : parralaxAssetGenerator {
 
 	public List<GameObject>[] GameObjectTabOfTypePrefabs = null;
 
+	public GameObject additionalPrefabAsset;
+	public Vector3 additionalPrefabPosition;
+
 	private int probabilitySomme;
 
 	// Use this for initialization
@@ -55,6 +58,11 @@ public class assetRandomGenerator : parralaxAssetGenerator {
 		GameObject asset = availableGameobject (GameObjectTabOfTypePrefabs[id]);
 		if (asset == null) {
 			asset = Instantiate (AssetConfiguation[id].prefabAsset);
+			if (additionalPrefabAsset != null) {
+				GameObject additional = Instantiate (additionalPrefabAsset);
+				additional.transform.SetParent (asset.transform);
+				additional.transform.position = additionalPrefabPosition;
+			}
 			GameObjectTabOfTypePrefabs[id].Add (asset);
 		}
 		GenerateAssetStruct assetStruct = new GenerateAssetStruct();

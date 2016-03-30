@@ -46,44 +46,99 @@ MonoBehaviour:
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: 1erPlan
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
-    distance: -40
-    generatorScript: {fileID: 11424062, guid: 365fc72a99eb21f4394afb9d9110ecb5, type: 2}
-    lowSpaceBetweenAsset: 0
-    hightSpaceBetweenAsset: 0
+    distance: -35
+    generatorScript: {fileID: 11469598, guid: c1a26580680da024db2019953d2e24fa, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
     relativeSpeed: 0
+    colorTeinte: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
+    nameParalaxPlan: 1erPlanArbre
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
     distance: -70
     generatorScript: {fileID: 11484730, guid: edccf59182a39b840a58632418e932c8, type: 2}
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: 1erMontagne
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
     distance: -100
     generatorScript: {fileID: 11483544, guid: 414c878346a0bde48a9301381eab978b, type: 2}
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: 2emeMontagne
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
     distance: -1000
     generatorScript: {fileID: 11454274, guid: 94a4610d3cc7e94498bd93c01a0e56fc, type: 2}
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: DernierPlan
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
-    distance: 2
+    distance: 1
     generatorScript: {fileID: 11434114, guid: 45e6e951137d6694784f951757886c5a, type: 2}
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: foreground
   - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
     distance: 0
     generatorScript: {fileID: 11418782, guid: bdaec8e682001714d8f7fdd9d6dd1dfd, type: 2}
     lowSpaceBetweenAsset: 0
     hightSpaceBetweenAsset: 0
     relativeSpeed: 0
+    colorTeinte: {r: 1, g: 1, b: 1, a: 1}
+    nameParalaxPlan: Ground
+  - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    distance: -40
+    generatorScript: {fileID: 11412024, guid: b67a643d0df168445ba3ecf6655098f9, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
+    relativeSpeed: 0
+    colorTeinte: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 1}
+    nameParalaxPlan: 2emePlanArbre
+  - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    distance: -45
+    generatorScript: {fileID: 11408842, guid: 7d0662eb0c8899047b85963e7c9c42ce, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
+    relativeSpeed: 0
+    colorTeinte: {r: 0.5808823, g: 0.5808823, b: 0.5808823, a: 1}
+    nameParalaxPlan: 3emePlanArbre
+  - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    distance: -50
+    generatorScript: {fileID: 11417148, guid: 75f3c60c483b37e4c9cd62a4ddcf9fa5, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
+    relativeSpeed: 0
+    colorTeinte: {r: 0.75735295, g: 0.75735295, b: 0.75735295, a: 1}
+    nameParalaxPlan: 4emePlanArbre
+  - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    distance: -55
+    generatorScript: {fileID: 11471282, guid: af5c844bbf7213d43a528a2ad114d426, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
+    relativeSpeed: 0
+    colorTeinte: {r: 0.8014706, g: 0.8014706, b: 0.8014706, a: 1}
+    nameParalaxPlan: 5emePlanArbre
+  - prefabParralaxPlan: {fileID: 132386, guid: d2dd1d07fce184209812f2e3d104b798, type: 2}
+    distance: -60
+    generatorScript: {fileID: 11447162, guid: ec165354b114bb54bbd1d139cb4b9580, type: 2}
+    lowSpaceBetweenAsset: 1.5
+    hightSpaceBetweenAsset: 2
+    relativeSpeed: 0
+    colorTeinte: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    nameParalaxPlan: 6emePlanArbre
   cameraToFollow: {fileID: 0}
-  constantSpeed: 0.05
+  constantSpeed: 0.5
+  debugMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

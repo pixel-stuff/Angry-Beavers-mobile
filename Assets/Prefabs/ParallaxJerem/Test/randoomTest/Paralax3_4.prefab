@@ -32,7 +32,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &463902
 Transform:
   m_ObjectHideFlags: 1
@@ -65,7 +65,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132200}
   serializedVersion: 2
-  lengthInSec: 2
+  lengthInSec: 8
   startDelay:
     scalar: 0
     maxCurve:
@@ -112,7 +112,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 8.21
+      scalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -417,7 +417,7 @@ ParticleSystem:
       minMaxState: 2
     randomizeRotationDirection: 0
     gravityModifier: 0.02
-    maxNumParticles: 25
+    maxNumParticles: 2
     rotation3D: 0
   ShapeModule:
     serializedVersion: 2
@@ -478,19 +478,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
       minMaxState: 0
-    cnt0: 1
-    cnt1: 2
-    cnt2: 2
-    cnt3: 30
-    cntmax0: 1
+    cnt0: 0
+    cnt1: 0
+    cnt2: 0
+    cnt3: 0
+    cntmax0: 2
     cntmax1: 2
     cntmax2: 2
-    cntmax3: 30
-    time0: 0
-    time1: 1.4
-    time2: 2
-    time3: 0
-    m_BurstCount: 3
+    cntmax3: 2
+    time0: 2
+    time1: 4
+    time2: 6
+    time3: 8
+    m_BurstCount: 4
   SizeModule:
     enabled: 1
     curve:
