@@ -561,60 +561,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 31522846}
   m_RootOrder: 0
---- !u!1001 &185934417
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 127368, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482782, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 455866, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c765f9ea3210d694ba17cd082ecfc679, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &291164677 stripped
 Transform:
   m_PrefabParentObject: {fileID: 489462, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
@@ -709,7 +655,7 @@ Transform:
   - {fileID: 1963365392}
   - {fileID: 368636493}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!61 &391839110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -780,7 +726,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489462, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 140830, guid: c2eca6f27a6a8440e84370454a8875f3, type: 2}
       propertyPath: m_Name
@@ -1283,7 +1229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 463072, guid: 32a5c65232d02314d95d6a72ebf9db73, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a5c65232d02314d95d6a72ebf9db73, type: 2}
@@ -1331,7 +1277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408862, guid: edd80377b2bb3405480b344b40989ee9, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11492466, guid: edd80377b2bb3405480b344b40989ee9, type: 2}
       propertyPath: brothersManager
@@ -1694,7 +1640,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401158, guid: 4ea81944f1c988741b3c6c2148054053, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ea81944f1c988741b3c6c2148054053, type: 2}
@@ -1742,106 +1688,6 @@ Prefab:
       propertyPath: cameraToFollow
       value: 
       objectReference: {fileID: 520358330}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[0].nameParalaxPlan
-      value: 1erPlan
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[4].nameParalaxPlan
-      value: DernierPlan
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[2].nameParalaxPlan
-      value: 1erMontagne
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[3].nameParalaxPlan
-      value: 2emeMontagne
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[5].distance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[5].nameParalaxPlan
-      value: foreground
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[1].nameParalaxPlan
-      value: 1erPlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[6].nameParalaxPlan
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[7].nameParalaxPlan
-      value: 2emePlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[8].nameParalaxPlan
-      value: 3emePlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[9].nameParalaxPlan
-      value: 4emePlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[10].nameParalaxPlan
-      value: 5emePlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[11].nameParalaxPlan
-      value: 6emePlanArbre
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[0].relativeSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[0].distance
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[6].distance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: constantSpeed
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[1].distance
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[2].distance
-      value: -55
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[3].distance
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[7].distance
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[8].distance
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[9].distance
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[10].distance
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 11444922, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
-      propertyPath: configurationParralax.Array.data[11].distance
-      value: -45
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc9b16beee2f09f4aa3a40ed4bc23bbf, type: 2}
   m_IsPrefabParent: 0
