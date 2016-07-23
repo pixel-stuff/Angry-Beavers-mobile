@@ -41,7 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 188732, guid: 50b993f12cbf01541bccc5b77799ea75, type: 2}
   authoriseRandomFlip: 0
-  GameObjectTabOfTypePrefab: []
+  GameObjectTabOfTypePrefab:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
